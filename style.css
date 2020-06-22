@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    display: grid;
+    background-color: beige;
+    width: 960px;
+    height: 960px;
+}
+
+.container-grid {
+    background-color: cadetblue;
+}
