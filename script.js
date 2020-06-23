@@ -51,5 +51,5 @@ sizeBtn.addEventListener("click", getGridAmount);
 colorBtn.addEventListener("click", getColor);
 randomColorBtn.addEventListener("click", getRandomColor);
 container.addEventListener("mousedown", setClickedTrue);
-container.addEventListener("mouseup", setClickedFalse);
+window.addEventListener("mouseup", setClickedFalse);
 createGrids(16);
