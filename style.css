@@ -1,15 +1,47 @@
 body {
     margin: 0;
+    background-color: beige;
 }
 
 #container {
-    margin: 0 auto;
     display: grid;
-    background-color: beige;
-    width: 960px;
-    height: 960px;
+    margin: 10px auto;
+    background-color: white;
+    width: 900px;
+    height: 900px;
 }
 
-.container-grid {
-    background-color: cadetblue;
+#buttons {
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-height: 950px){
+    #container {
+        display: grid;
+        margin: 10px auto;
+        background-color: white;
+        width: 800px;
+        height: 800px;
+    }
+}
+
+@media (max-height: 850px){
+    #container {
+        display: grid;
+        margin: 10px auto;
+        background-color: white;
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media (max-height: 750px){
+    #container {
+        display: grid;
+        margin: 10px auto;
+        background-color: white;
+        width: 600px;
+        height: 600px;
+    }
 }
