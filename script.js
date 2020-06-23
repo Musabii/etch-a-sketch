@@ -22,11 +22,11 @@ function createGrids(numberOfGrids){
     }
 }
 
-function setClicked() {
-    if (!clicked) {
-        clicked = true;
-        return;
-    }
+function setClickedTrue() {
+    clicked = true;
+}
+
+function setClickedFalse() {
     clicked = false;
 }
 
@@ -50,6 +50,6 @@ function getRandomColor() {
 sizeBtn.addEventListener("click", getGridAmount);
 colorBtn.addEventListener("click", getColor);
 randomColorBtn.addEventListener("click", getRandomColor);
-container.addEventListener("mousedown", setClicked);
-container.addEventListener("mouseup", setClicked);
+container.addEventListener("mousedown", setClickedTrue);
+container.addEventListener("mouseup", setClickedFalse);
 createGrids(16);
